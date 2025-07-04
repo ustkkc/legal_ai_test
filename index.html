@@ -1242,7 +1242,7 @@
                                 <div class="message-time" id="currentTime"></div>
                             </div>
                             <div class="message-content">
-                                Merhaba! Ben Ustad AI, hukuki sorularınızda size yardımcı olmak için buradayım. Vergi hukuku, ceza hukuku, medeni hukuk ve diğer hukuki konularda uzman danışmanlık hizmeti veriyorum. Yukarıdaki örnek sorulardan birini seçebilir veya kendi sorunuzu yazabilirsiniz.
+                                Merhaba! Ben Ustad AI, hukuki sorularınızda size yardımcı olmak için buradayım. VERGİ USUL KANUNU ile ilgili sorularınızı sorabilirsiniz. 
                             </div>
                         </div>
                     </div>
@@ -1504,7 +1504,7 @@
                 try {
                     const conversationContext = this.buildConversationContext();
                     
-                    const response = await fetch('http://127.0.0.1:8000/f1/legal/query', {
+                    const response = await fetch('https://ai-aps-prod-we-001-hrdadhc0bqcwdddd.westeurope-01.azurewebsites.net/f1/legal/query', {
                         method: 'POST',
                         headers: {
                             'accept': 'application/json',
